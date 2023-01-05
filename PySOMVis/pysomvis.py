@@ -13,6 +13,7 @@
           SOMVisualizaiton
 """
 
+
 import panel as pn
 import numpy as np
 import holoviews as hv
