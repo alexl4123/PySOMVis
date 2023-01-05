@@ -1,8 +1,11 @@
-from typing import Tuple
 import numpy as np
 import panel as pn
-from visualizations.iVisualization import VisualizationInterface
-from controls.controllers import TopographicErrorController
+
+from typing import Tuple
+
+from pysomvis.visualizations.ivisualization import VisualizationInterface
+from pysomvis.controls.controllers import TopographicErrorController
+
 #check
 class TopographicError(VisualizationInterface):
 

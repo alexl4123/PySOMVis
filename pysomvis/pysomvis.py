@@ -20,29 +20,30 @@ import holoviews as hv
 from holoviews import opts
 from holoviews.streams import Pipe, Buffer
 
-from controls.controllers import MainController, PointOptions, SegmentOptions
+from .controls.controllers import MainController, PointOptions, SegmentOptions
 hv.extension('bokeh')
 
-from visualizations.complane import ComponentPlane
-from visualizations.dmatrix import DMatrix
-from visualizations.hithistogram import HitHist
-from visualizations.sdh import SDH
-from visualizations.qerror import QError
-from visualizations.umatrix import UMatrix
-from visualizations.upmatrix import UStar_PMatrix
-from visualizations.neighbourhood_graph import NeighbourhoodGraph
-from visualizations.clustering import Clustering
-from visualizations.metromap import MetroMap
-from visualizations.piechart import PieChart
-from visualizations.chessboard import Chessboard
-from visualizations.somstreamvis import SOMStreamVis
-from visualizations.sky_metaphor import SkyMetaphor
-from visualizations.topographic_error import TopographicError
-from visualizations.intrinsic_distance import IntrinsicDistance
-from visualizations.activityhist import ActivityHist
-from visualizations.minimumSpanningTree import MinimumSpanningTree
-from visualizations.cluster_connection import ClusterConnection
-from mnemonics.mnemonicSOM import MnemonicSOM
+from .visualizations.ivisualization import VisualizationInterface
+from .visualizations.complane import ComponentPlane
+from .visualizations.dmatrix import DMatrix
+from .visualizations.hithistogram import HitHist
+from .visualizations.sdh import SDH
+from .visualizations.qerror import QError
+from .visualizations.umatrix import UMatrix
+from .visualizations.upmatrix import UStar_PMatrix
+from .visualizations.neighbourhood_graph import NeighbourhoodGraph
+from .visualizations.clustering import Clustering
+from .visualizations.metromap import MetroMap
+from .visualizations.piechart import PieChart
+from .visualizations.chessboard import Chessboard
+from .visualizations.somstreamvis import SOMStreamVis
+from .visualizations.sky_metaphor import SkyMetaphor
+from .visualizations.topographic_error import TopographicError
+from .visualizations.intrinsic_distance import IntrinsicDistance
+from .visualizations.activityhist import ActivityHist
+from .visualizations.minimumSpanningTree import MinimumSpanningTree
+from .visualizations.cluster_connection import ClusterConnection
+from .mnemonics.mnemonicSOM import MnemonicSOM
 from skimage.transform import resize
 
 OBJECTS_CLASSES = [ComponentPlane, HitHist, UMatrix, DMatrix, UStar_PMatrix, 

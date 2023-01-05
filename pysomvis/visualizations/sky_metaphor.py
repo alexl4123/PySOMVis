@@ -1,10 +1,12 @@
 import numpy as np
-from visualizations.iVisualization import VisualizationInterface
-from visualizations.sdh import SDH
-from controls.controllers import SkyMetaphorController
 import holoviews as hv
 import panel as pn
+
 import scipy.ndimage
+
+from pysomvis.visualizations.ivisualization import VisualizationInterface
+from pysomvis.visualizations.sdh import SDH
+from pysomvis.controls.controllers import SkyMetaphorController
 
 
 class SkyMetaphor(VisualizationInterface):

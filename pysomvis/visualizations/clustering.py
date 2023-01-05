@@ -4,10 +4,12 @@ This Visualizer provides clustering algorithm on top of neurons grid.
 """
 
 import numpy as np
-from visualizations.iVisualization import VisualizationInterface
-from controls.controllers import ClusteringController
-from sklearn.cluster import KMeans, AgglomerativeClustering
 import panel as pn
+
+from sklearn.cluster import KMeans, AgglomerativeClustering
+
+from pysomvis.visualizations.ivisualization import VisualizationInterface
+from pysomvis.controls.controllers import ClusteringController
 
 class Clustering(VisualizationInterface):
     

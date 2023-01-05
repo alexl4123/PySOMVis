@@ -7,9 +7,11 @@ The first one uses knn-based distances, the second one radius-based distances.
 """
 
 import numpy as np
-from visualizations.iVisualization import VisualizationInterface
-from controls.controllers import NeighbourhoodGraphController
 import panel as pn
+
+from pysomvis.visualizations.ivisualization import VisualizationInterface
+from pysomvis.controls.controllers import NeighbourhoodGraphController
+
 
 class NeighbourhoodGraph(VisualizationInterface):
     

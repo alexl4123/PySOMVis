@@ -1,6 +1,8 @@
-from visualizations.iVisualization import VisualizationInterface
-from controls.controllers import ComPlaneController
 import panel as pn
+
+from .ivisualization import VisualizationInterface
+#from pysomvis.visualizations.ivisualization import VisualizationInterface
+from pysomvis.controls.controllers import ComPlaneController
 
 class ComponentPlane(VisualizationInterface):
     

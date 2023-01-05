@@ -1,12 +1,13 @@
-
 import numpy as np
 import panel as pn
 import random as rd
 import math
-from visualizations.umatrix import UMatrix
-from controls.controllers import MnemonicSOMController
-import mnemonics.input_utils as input_utils
-from visualizations.iVisualization import VisualizationInterface
+
+import pysomvis.mnemonics.input_utils as input_utils
+
+from pysomvis.visualizations.umatrix import UMatrix
+from pysomvis.visualizations.ivisualization import VisualizationInterface
+from pysomvis.controls.controllers import MnemonicSOMController
 
 class MnemonicSOM(VisualizationInterface):
 

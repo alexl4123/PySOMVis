@@ -1,10 +1,13 @@
 import numpy as np
-from visualizations.iVisualization import VisualizationInterface
-from controls.controllers import MetroMapController
 import panel as pn
+
 import holoviews as hv
-from holoviews.streams import Pipe
 import bokeh.palettes as colors
+
+from holoviews.streams import Pipe
+
+from pysomvis.visualizations.ivisualization import VisualizationInterface
+from pysomvis.controls.controllers import MetroMapController
 
 class MetroMap(VisualizationInterface):
 

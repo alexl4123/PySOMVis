@@ -1,11 +1,12 @@
-
-from visualizations.iVisualization import VisualizationInterface
-from scipy.spatial import Voronoi
-from skimage.draw import polygon
-from controls.controllers import ChessboardController
 import holoviews as hv
 import numpy as np
 import panel as pn
+
+from scipy.spatial import Voronoi
+from skimage.draw import polygon
+
+from pysomvis.visualizations.ivisualization import VisualizationInterface
+from pysomvis.controls.controllers import ChessboardController
 
 class Chessboard(VisualizationInterface):
     

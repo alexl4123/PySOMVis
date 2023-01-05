@@ -1,10 +1,11 @@
 import numpy as np
-from scipy.spatial import distance_matrix, distance
-from visualizations.iVisualization import VisualizationInterface
 import panel as pn
 import holoviews as hv
+
+from scipy.spatial import distance_matrix, distance
 from bokeh.palettes import Category20c, Category20
 
+from pysomvis.visualizations.ivisualization import VisualizationInterface
 
 _COLOURS_93 = np.array(['#FF5555','#5555FF','#55FF55','#FFFF55','#FF55FF','#55FFFF','#FFAFAF','#808080',
               '#C00000','#0000C0','#00C000','#C0C000','#C000C0','#00C0C0','#404040','#FF4040',

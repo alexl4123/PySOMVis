@@ -1,10 +1,12 @@
 import networkx as nx
-from networkx.algorithms import tree
-from holoviews import dim
 import numpy as np
 import panel as pn
-from controls.controllers import MinimumSpanningTreeController
-from visualizations.iVisualization import VisualizationInterface
+
+from networkx.algorithms import tree
+from holoviews import dim
+
+from pysomvis.controls.controllers import MinimumSpanningTreeController
+from pysomvis.visualizations.ivisualization import VisualizationInterface
 
 class MinimumSpanningTree(VisualizationInterface):
     

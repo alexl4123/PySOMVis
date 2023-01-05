@@ -10,6 +10,26 @@ Installation via commandline using `pip`: Installation can be performed by first
 pip install .
 ```
 
+# Import
+
+After installation one can import it iby the following command:
+
+```
+import pysomvis
+```
+
+To get the ''main-class'':
+
+```
+from pysomvis import PySOMVis
+```
+
+OR
+
+```
+from pysomvis import *
+```
+
 # Current visualizations 
 Pictures bellow are based on the projected Chain Link Data set (http://ifs.tuwien.ac.at/dm/somtoolbox/datasets.html). It is synthetic data representing two intertwined rings, which presents the topology violations after projection.
 </br> The SOM map represents **18x12 neurons** trained **10000 times** with learning rate **0.7** and sigma **7** in **SOMToolbox**.

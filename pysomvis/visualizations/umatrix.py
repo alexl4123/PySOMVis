@@ -8,10 +8,10 @@ In Proc. Intern. Neural Networks, 1990, pp. 305-308, Kluwer  Academic Press, Par
 
 """
 
-
-from visualizations.iVisualization import VisualizationInterface
 import numpy as np
 import panel as pn
+
+from pysomvis.visualizations.ivisualization import VisualizationInterface
 
 class UMatrix(VisualizationInterface):
     

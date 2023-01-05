@@ -1,8 +1,10 @@
-from visualizations.iVisualization import VisualizationInterface
-from controls.controllers import UStar_PMatrixController
-from visualizations.umatrix import UMatrix
 import panel as pn
 import numpy as np
+
+from pysomvis.visualizations.ivisualization import VisualizationInterface
+from pysomvis.controls.controllers import UStar_PMatrixController
+from pysomvis.visualizations.umatrix import UMatrix
+
 class UStar_PMatrix(VisualizationInterface):
     
     def __init__(self, main):

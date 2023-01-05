@@ -1,9 +1,10 @@
 import numpy as np
 import panel as pn
-from visualizations.iVisualization import VisualizationInterface
+
 from typing import Tuple, List
-import numpy as np
-from visualizations.graph import Graph
+
+from pysomvis.visualizations.ivisualization import VisualizationInterface
+from pysomvis.visualizations.graph import Graph
 #------------------------------------------------------------------TESTING MODE-----------------------------------------------------------#
 class IntrinsicDistance(VisualizationInterface):
 

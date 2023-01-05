@@ -1,14 +1,16 @@
 import numpy as np
-from scipy.spatial import distance_matrix, distance
-from visualizations.iVisualization import VisualizationInterface
-from controls.controllers import SOMStreamVisController
 import panel as pn
 import holoviews as hv
-from holoviews.streams import Pipe, Buffer
 import pandas as pd
 import time
+
+from scipy.spatial import distance_matrix, distance
+from holoviews.streams import Pipe, Buffer
 from threading import Thread
 from tkinter import *
+
+from pysomvis.visualizations.ivisualization import VisualizationInterface
+from pysomvis.controls.controllers import SOMStreamVisController
 
 class SOMStreamVis(VisualizationInterface):
     

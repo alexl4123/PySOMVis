@@ -5,10 +5,12 @@ Visualization of some aspects of Quantization Error
 """
 
 import numpy as np
-from visualizations.iVisualization import VisualizationInterface
-from controls.controllers import QErrorController
 import panel as pn
+
 from scipy.spatial import distance_matrix, distance
+
+from pysomvis.visualizations.ivisualization import VisualizationInterface
+from pysomvis.controls.controllers import QErrorController
 
 class QError(VisualizationInterface):
     

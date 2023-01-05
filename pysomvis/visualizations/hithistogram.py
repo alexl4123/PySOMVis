@@ -1,7 +1,9 @@
 import numpy as np
 import panel as pn
+
 from scipy.spatial import distance_matrix, distance
-from visualizations.iVisualization import VisualizationInterface
+
+from pysomvis.visualizations.ivisualization import VisualizationInterface
 
 class HitHist(VisualizationInterface):
     

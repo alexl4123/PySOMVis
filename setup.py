@@ -1,11 +1,13 @@
 from setuptools import setup, find_packages
+setup()
 
+"""
 setup(
-   name='PySOMVis',
+   name='pysomvis',
    version='0.0.1',
    author='Sergei Mnishko',
    author_email='sergei.mnishko@gmail.com',
-   packages=['PySOMVis'],
+   packages=['pysomvis'],
    url='https://github.com/smnishko/PySOMVis',
    license='LICENSE.txt',
    description='PySOMVis is an open-source Python-based GUI implementation for analyzing trained SOMs. It provides a wide range of different visualizations for the SOM, such as Chessboard Visualization, Clustering approach, Component Plane, D-Matrix, Hit Histogram, Metro Map, Neighborhood Graphs, Pie Chart, Smoothed Data Histogram, U-Matrix, U*-Matrix, P-Matrix, Quantization Error, SOMStreamVis',
@@ -21,3 +23,4 @@ setup(
         'scikit_learn>=1.0.2',
         'scipy>=1.7.1'],
 )
+"""
