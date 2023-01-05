@@ -7,8 +7,9 @@ __author__ = 'Sergei Mnishko'
 
 
 from .pysomvis import PySOMVis
+from .SOMToolBox_Parse import SOMToolBox_Parse
 
-__all__ = [PySOMVis.__name__]
+__all__ = [PySOMVis.__name__, SOMToolBox_Parse.__name__]
 
 
 
