@@ -1,6 +1,15 @@
 # PySOMVis framework
 
 **PySOMVis framework** involves popular Self-Organizing Maps visualization techniques, which is inspired by Java based **SOMToolbox** (http://www.ifs.tuwien.ac.at/dm/somtoolbox/index.html)
+
+# Installation
+
+Installation via commandline using `pip`: Installation can be performed by first cloning this repository and then navigating to the `PySOMVis` folder. Inside the folder, one then has to type:
+
+```
+pip install .
+```
+
 # Current visualizations 
 Pictures bellow are based on the projected Chain Link Data set (http://ifs.tuwien.ac.at/dm/somtoolbox/datasets.html). It is synthetic data representing two intertwined rings, which presents the topology violations after projection.
 </br> The SOM map represents **18x12 neurons** trained **10000 times** with learning rate **0.7** and sigma **7** in **SOMToolbox**.
