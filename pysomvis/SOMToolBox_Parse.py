@@ -4,8 +4,6 @@ import gzip
 import os
 
 from pathlib import Path
-from io import StringIO
-
 
 class SOMToolBox_Parse:
     
