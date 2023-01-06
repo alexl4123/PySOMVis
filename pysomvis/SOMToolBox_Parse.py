@@ -157,8 +157,8 @@ class SOMToolBox_Parse:
     def _generate_weights_file(cls, data, path):
 
         type_var = "som"
-        x_dim = str(data.shape[0])
-        y_dim = str(data.shape[1])
+        y_dim = str(data.shape[0])
+        x_dim = str(data.shape[1])
         vec_dim = str(data.shape[2])
         z_dim = str(1)
 
@@ -171,8 +171,8 @@ class SOMToolBox_Parse:
 
         iteration = 1
 
-        for x_index in range(data.shape[0]):
-            for y_index in range(data.shape[1]):
+        for y_index in range(data.shape[1]):
+            for x_index in range(data.shape[0]):
                 
                 row_str = ""
 

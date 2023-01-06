@@ -91,8 +91,8 @@ class PySOMVis():
                 
 
 
-            self._m = y
-            self._n = x
+            self._m = x
+            self._n = y
             self._dim = dimension
 
         self._idata = input_data
