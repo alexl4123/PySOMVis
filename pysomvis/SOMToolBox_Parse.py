@@ -171,9 +171,8 @@ class SOMToolBox_Parse:
 
         iteration = 1
 
-        for y_index in range(data.shape[1]):
-
-            for x_index in range(data.shape[0]):
+        for x_index in range(data.shape[0]):
+            for y_index in range(data.shape[1]):
                 
                 row_str = ""
 

@@ -66,7 +66,7 @@ _COLOURS_93 = ['#FF5555','#5555FF','#55FF55','#FFFF55','#FF55FF','#55FFFF','#FFA
 
 class PySOMVis():
 
-    def __init__(self, weights, m=None, n=None, dimension=None, input_data=None, classes=None, component_names=None):
+    def __init__(self, weights, y=None, x=None, dimension=None, input_data=None, classes=None, component_names=None):
         
         self._height = self._width = 500
         self._pipe = Pipe(data=[])
@@ -76,14 +76,23 @@ class PySOMVis():
 
         self._weights = weights
         #check ratio of the input map
-        if len(self._weights.shape)==3 and m==None and n==None and dimension==None:
+        if len(self._weights.shape)==3 and y==None and x==None and dimension==None:
             self._m = self._weights.shape[0]
             self._n = self._weights.shape[1]
             self._dim = self._weights.shape[2]
             self._weights = self._weights.reshape(-1, self._dim)
+        elif y == None or y == None or dimension == None:
+            print("One must either fully specify <x>, <y> and <dimension> or nothing at all!") 
+            return
         else:
-            self._m = m
-            self._n = n
+            if weights.shape[0] != x*y:
+                print(f"Weights are in wrong shape, when specifying <x>, <y> and <dimension> manually, IS: {weights.shape}, SHOULD:({x*y},{weights.shape[2]})")
+                return
+                
+
+
+            self._m = y
+            self._n = x
             self._dim = dimension
 
         self._idata = input_data
