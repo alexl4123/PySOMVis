@@ -322,11 +322,18 @@ class TopographicErrorController(param.Parameterized):
 
 class ActivityHistController(param.Parameterized):
 
-    idx_vec = param.Integer(0, bounds=(0, None), label='Input vector')
+    
+    #idx_vec = param.Integer(0, bounds=(0, None), label='Input vector')
+    idx_vec = param.Number(0, label='Input vector')
+    idx_bounds = param.String()
 
     def __init__(self, calculate, bounds, **params):
         super(ActivityHistController, self).__init__(**params)
-        self.param.idx_vec.bounds = bounds
+        #self.param.idx_vec.bounds = bounds
+        self.param.idx_bounds.default = "Values only possible from " + str(bounds[0]) + " to " + str(bounds[1] - 1)
+        self.param.idx_bounds.label = "Values only possible from " + str(bounds[0]) + " to " + str(bounds[1] - 1)
+        self.param.idx_bounds.constant = True
+        
         self._calculate = calculate    
 
     @param.depends("idx_vec", watch=True)
